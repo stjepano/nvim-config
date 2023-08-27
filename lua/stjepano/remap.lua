@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- lazy plugins
 -- vim.keymap.set("n", "<leader>l", vim.cmd.Lazy)
 
--- nohlsearch
+-- nohlsearch 
 vim.keymap.set("n", "<leader>h", vim.cmd.nohlsearch)
 
 -- write and quit
@@ -28,3 +28,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- fugitive
 vim.keymap.set("n", "<leader>g", vim.cmd.Git)
+
+-- when in insert mode use jj to exit
+vim.keymap.set("i", "jj", "<esc>")

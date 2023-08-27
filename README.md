@@ -50,6 +50,9 @@ vim.g.netrw_liststyle = 0
 
 The ```<leader>``` key is ```Space```.
 
+When in insert mode you can use ```Escape``` to exit it or press ```jj``` quickly. 
+If you actually need to type ```jj``` then you need to wait 1 second between keypresses.
+
 ### Basic remaps
 
 | Key combo    | Action              |
