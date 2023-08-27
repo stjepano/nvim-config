@@ -1,4 +1,4 @@
-# Personal NVIm config
+# Personal NVIM config
 
 ## Installed plugins
 
@@ -9,7 +9,7 @@
 * Bufferline (defaults)
 * Treesitter
 * Telescope
-* Tokyonight dark theem
+* Tokyonight dark theme
 
 ## Basic configuration
 
