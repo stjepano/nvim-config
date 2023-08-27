@@ -48,6 +48,8 @@ vim.g.netrw_liststyle = 0
 
 ## Remaps
 
+The ```<leader>``` key is ```Space```.
+
 ### Basic remaps
 
 | Key combo    | Action              |
