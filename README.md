@@ -13,7 +13,7 @@
 
 ## Basic configuration
 
-'''
+```
 vim.opt.exrc = true
 vim.opt.secure = true
 
@@ -44,75 +44,76 @@ vim.opt.pumheight = 10
 
 vim.g.netrw_banner = false
 vim.g.netrw_liststyle = 0
-'''
+```
+
 ## Remaps
 
 ### Basic remaps
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <leader>g  | Start fugitive      |
-| <leader>h  | Turn off highlights |
-| <leader>w  | Save                |
-| <leader>q  | Quit                |
-| <leader>pv | Explorer            |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<leader\>g  | Start fugitive      |
+| \<leader\>h  | Turn off highlights |
+| \<leader\>w  | Save                |
+| \<leader\>q  | Quit                |
+| \<leader\>pv | Explorer            |
 
 ### Telescope
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <leader>ff | Git files           |
-| <leader>fa | All files           |
-| <leader>ft | Grep                |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<leader\>ff | Git files           |
+| \<leader\>fa | All files           |
+| \<leader\>ft | Grep                |
 
 ### Buffers
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <leader>bb | Prev buffer         |
-| <leader>bn | Next buffer         |
-| <leader>bc | Close buffer        |
-| <leader>bj | Pick buffer         |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<leader\>bb | Prev buffer         |
+| \<leader\>bn | Next buffer         |
+| \<leader\>bc | Close buffer        |
+| \<leader\>bj | Pick buffer         |
 
 ### Windows
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <leader>sv | Split vertically    |
-| <leader>sh | Split horizontally  |
-| <Ctrl-l>   | Go left             |
-| <Ctrl-h>   | Go right            |
-| <Ctrl-j>   | Go down             |
-| <Ctrl-k>   | Go up               |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<leader\>sv | Split vertically    |
+| \<leader\>sh | Split horizontally  |
+| \<Ctrl-l\>   | Go left             |
+| \<Ctrl-h\>   | Go right            |
+| \<Ctrl-j\>   | Go down             |
+| \<Ctrl-k\>   | Go up               |
 
 ### LSP
 
-| Key combo  | Action              |
-|------------|---------------------|
-| gr         | Show references     |
-| gd         | Jump to definition  |
-| gD         | Jump to declaraion  |
-| K          | Hover help          |
-| <Ctrl-k>   | Signature help      |
-| <leader>rn | Rename              |
-| ]d, [d     | Next, prev error    |
+| Key combo    | Action              |
+|--------------|---------------------|
+| gr           | Show references     |
+| gd           | Jump to definition  |
+| gD           | Jump to declaraion  |
+| K            | Hover help          |
+| \<Ctrl-k\>   | Signature help      |
+| \<leader\>rn | Rename              |
+| ]d  , [d     | Next, prev error    |
 
 ### LSP autocompetion (cmp)
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <Ctrl-y>   | Accept              |
-| <Ctrl-e>   | Abort               |
-| <Ctrl-u>   | Scroll -4           |
-| <Ctrl-d>   | Scroll +4           |
-| <Shft-Tab> | Select+insert prev  |
-| <Tab>      | Select+insert next  |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<Ctrl-y\>   | Accept              |
+| \<Ctrl-e\>   | Abort               |
+| \<Ctrl-u\>   | Scroll -4           |
+| \<Ctrl-d\>   | Scroll +4           |
+| \<Shft-Tab\> | Select+insert prev  |
+| \<Tab\>      | Select+insert next  |
 
 ### Copilot
 
-| Key combo  | Action              |
-|------------|---------------------|
-| <Alt-l>    | Accept              |
-| <Alt-]>    | Next suggestion     |
-| <Alt-[>    | Prev suggestion     |
-| <Alt-k>    | Dismiss             |
+| Key combo    | Action              |
+|--------------|---------------------|
+| \<Alt-l\>    | Accept              |
+| \<Alt-]\>    | Next suggestion     |
+| \<Alt-[\>    | Prev suggestion     |
+| \<Alt-k\>    | Dismiss             |
