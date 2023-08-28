@@ -10,6 +10,7 @@
 * Treesitter
 * Telescope
 * Tokyonight dark theme
+* Quickmath
 
 ## Basic configuration
 
