@@ -71,6 +71,8 @@ If you actually need to type ```jj``` then you need to wait 1 second between key
 | \<leader\>ff | Git files           |
 | \<leader\>fa | All files           |
 | \<leader\>ft | Grep                |
+| \<leader\>fb | Buffers             |
+| \<leader\>fy | LSP document sym    |
 
 ### Buffers
 
