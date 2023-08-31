@@ -5,13 +5,13 @@ local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 --[[
 local cmp_select_opts = {behavior = cmp.SelectBehaviorSelect}
+]]
 
 local has_words_before = function()
   if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
 end
-]]
 
 cmp.setup({
   sources = {
@@ -25,26 +25,35 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.abort(),
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
+    --[[
     ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
     ['<Tab>'] = cmp_action.luasnip_supertab(),
-    --[[
     ['<S-Tab>'] = cmp.mapping.select_prev_item({behavior = cmp.SelectBehaviorInsert}),
     ['<Tab>'] = cmp.mapping.select_next_item({behavior = cmp.SelectBehaviorInsert}),
+    ]]
     ['<Shift-Tab>'] = cmp.mapping(function()
       if cmp.visible() then
-        cmp.select_prev_item(cmp_select_opts)
+        cmp.select_prev_item({behavior = cmp.SelectBehaviorInsert})
       else
         cmp.complete()
       end
     end),
+    --[[
+    ['<Tab>'] = cmp.mapping(function()
+      if cmp.visible() then
+        cmp.select_next_item({behavior = cmp.SelectBehaviorInsert})
+      else
+        cmp.complete()
+      end
+    end),
+    ]]
     ['<Tab>'] = vim.schedule_wrap(function(fallback)
       if cmp.visible() and has_words_before() then
-        cmp.select_next_item(cmp_select_opts)
+        cmp.select_next_item({behavior = cmp.SelectBehaviorInsert})
       else
         fallback()
       end
     end),
-    ]]
   },
   snippet = {
     expand = function(args)
