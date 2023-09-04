@@ -66,15 +66,17 @@ If you actually need to type ```jj``` then you need to wait 1 second between key
 
 ### Telescope
 
-| Key combo    | Action              |
-|--------------|---------------------|
-| \<leader\>ff | Git files           |
-| \<leader\>fa | All files           |
-| \<leader\>ft | Grep                |
-| \<leader\>fb | Buffers             |
-| \<leader\>fy | LSP document sym    |
+| Key combo     | Action              |
+|---------------|---------------------|
+| \<leader\>ff  | Git files           |
+| \<leader\>fa  | All files           |
+| \<leader\>ft  | Grep                |
+| \<leader\>fb  | Buffers             |
+| \<leader\>fy  | LSP document sym    |
+| \<leader\>fda | LSP diagnostics all |
+| \<leader\>fdc | LSP diagnostics     |
 
-### Buffers
+## Buffers
 
 | Key combo    | Action              |
 |--------------|---------------------|
