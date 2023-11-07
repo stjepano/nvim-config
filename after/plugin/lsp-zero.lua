@@ -87,6 +87,7 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<cr>', opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('i', '<C-k>', vim.lsp.buf.signature_help, opts)
+  vim.keymap.set('n', '<leader>sca', vim.lsp.buf.code_action, opts)
 end)
 
 lsp.setup()
