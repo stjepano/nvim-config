@@ -7,7 +7,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>h", vim.cmd.nohlsearch)
 
 -- write and quit
-vim.keymap.set("n", "<leader>w", "<cmd>:w<cr>")
+vim.keymap.set("n", "<leader>w", "<cmd>:w!<cr>")
 vim.keymap.set("n", "<leader>q", "<cmd>:q<cr>")
 
 -- buffers
