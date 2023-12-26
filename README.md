@@ -127,3 +127,50 @@ If you actually need to type ```jj``` then you need to wait 1 second between key
 | \<Alt-]\>    | Next suggestion     |
 | \<Alt-[\>    | Prev suggestion     |
 | \<Alt-k\>    | Dismiss             |
+
+### DAP
+
+| Key combo      | Action              |
+|----------------|---------------------|
+| \<leader\>db   | Toggle breakpoint   |
+| \<leader\>dB   | Set breakpoint      |
+| \<leader\>dlp  | Log point           |
+| \<leader\>dr   | Repl open           |
+| \<leader\>dl   | Run last            |
+| \<leader\>dh   | Hover               |
+| \<leader\>dp   | Preview             |
+| \<leader\>df   | Frames              |
+| \<leader\>ds   | Scope               |
+| \<F5\>         | Continue            |
+| \<F10\>        | Step over           |
+| \<F11\>        | Step into           |
+| \<F12\>        | Step out            |
+
+## DAP configuration
+
+Here is an example of DAP adapter and launch configuration using codelldb. I placed these into `.nvim.lua`
+
+```
+local dap = require('dap')
+dap.adapters.codelldb = {
+    type = 'server',
+    port = '${port}',
+    executable = {
+        command = '/home/stjepano/.local/share/nvim/mason/bin/codelldb',
+        args = {"--port", "${port}"}
+    },
+}
+dap.configurations.cpp = {
+    {
+        name = "Launch file",
+        type = "codelldb",
+        request = "launch",
+        program = function()
+            return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+        end,
+        cwd = '${workspaceFolder}',
+        stopOnEntry = true,
+    },
+}
+dap.configurations.c = dap.configurations.cpp
+```
