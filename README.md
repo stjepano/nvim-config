@@ -78,12 +78,13 @@ If you actually need to type ```jj``` then you need to wait 1 second between key
 
 ## Buffers
 
-| Key combo    | Action              |
-|--------------|---------------------|
-| \<leader\>bb | Prev buffer         |
-| \<leader\>bn | Next buffer         |
-| \<leader\>bc | Close buffer        |
-| \<leader\>bj | Pick buffer         |
+| Key combo    | Action                      |
+|--------------|-----------------------------|
+| \<leader\>bb | Prev buffer                 |
+| \<leader\>bn | Next buffer                 |
+| \<leader\>bc | Close buffer                |
+| \<leader\>bj | Pick buffer                 |
+| \<leader\>c  | Close buffer without window |
 
 ### Windows
 
@@ -91,6 +92,7 @@ If you actually need to type ```jj``` then you need to wait 1 second between key
 |--------------|---------------------|
 | \<leader\>sv | Split vertically    |
 | \<leader\>sh | Split horizontally  |
+| \<leader\>sc | Close current win   |
 | \<Ctrl-l\>   | Go left             |
 | \<Ctrl-h\>   | Go right            |
 | \<Ctrl-j\>   | Go down             |

@@ -14,12 +14,14 @@ vim.keymap.set("n", "<leader>q", "<cmd>:q<cr>")
 vim.keymap.set("n", "<leader>bb", "<cmd>:bp<cr>")
 vim.keymap.set("n", "<leader>bn", "<cmd>:bn<cr>")
 vim.keymap.set("n", "<leader>bc", "<cmd>:bdelete<cr>")
-vim.keymap.set("n", "<leader>c", "<cmd>:bd!<cr>")
+vim.keymap.set("n", "<leader>c", "<cmd>:bprev<bar>bdelete #<cr>")
+--vim.keymap.set("n", "<leader>c", "<cmd>:bd!<cr>")
 vim.keymap.set("n", "<leader>bj", "<cmd>:BufferLinePick<cr>")
 
 -- windows
 vim.keymap.set("n", "<leader>sh", "<cmd>:sp<cr>")
 vim.keymap.set("n", "<leader>sv", "<cmd>:vsp<cr>")
+vim.keymap.set("n", "<leader>sc", "<cmd>:close<cr>")
 -- window navigation
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
