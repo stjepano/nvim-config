@@ -33,3 +33,10 @@ vim.keymap.set("n", "<leader>g", vim.cmd.Git)
 
 -- when in insert mode use jj to exit
 vim.keymap.set("i", "jj", "<esc>")
+
+-- copilot
+vim.keymap.set("i", '<M-l>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+})
+vim.g_copilot_no_tab_map = true
